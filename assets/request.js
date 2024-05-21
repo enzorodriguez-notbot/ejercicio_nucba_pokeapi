@@ -1,8 +1,7 @@
-const BASE_URL = "https://pokeapi.co/api/v2/pokemon/1";
-
-const getPokemones = async () => {
-  const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
-  const data = await response.json();
+const baseURL = "https://pokeapi.co/api/v2/pokemon/";
+const fetchPokemons = async (url) => {
+  const res = await fetch(url);
+  const data = await res.json();
   console.log(data);
+  return data;
 };
-getPokemones();
