@@ -13,17 +13,40 @@
   <main>
     <div class="container">
       <div class="search-box">
-        <h1>Buscador de Pokemons</h1>
+        <h1>Buscador de <span>Pokemon</span></h1>
         <form id="form">
           <button type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
+          <input
+            type="number"
+            name="pokemon"
+            autocomplete="off"
+            placeholder="Buscar Pokemon"
+            class="search-input"
+          />
         </form>
+      </div>
+      <p class="search-msg">Ingrese un Pokemon!</p>
+      <section class="card-container"></section>
+      <div class="pokemon-info-container">
+        <div class="pokemon-img-div">
+          <img
+            class="pokemon-img"
+            src="./assets/img/001.png"
+            alt="pokemon-img"
+          />
+        </div>
+        <div class="pokemon-data">
+          <h2 class="pokemon-name">bulbasur</h2>
+          <h2 class="pokemon-type">tipo</h2>
+          <h2 class="pokemon-height">1.80metros</h2>
+          <h2 class="pokemon-weight">100 kilos</h2>
+        </div>
       </div>
     </div>
   </main>
   <body>
-    <script src="./assets/apiKey.js"></script>
     <script src="./assets/request.js"></script>
     <script src="./assets/main.js"></script>
   </body>
